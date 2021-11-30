@@ -5,11 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Калькулятор дат</title>
-	<script type="module" src="./js/main.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="../node_modules/howler/dist/howler.js" defer></script>
+	<script type="module" src="./js/main.js" defer></script>
 </head>
 <body>
-<h2>Калькулятор дат</h2>
-<form id="calcDate">
+<button class="btn"
+		onclick="document.getElementById('calcDate').classList.toggle('hidden')">
+	Калькулятор дат
+</button>
+<form id="calcDate" class="hidden">
 	<label for="dateFrom">
 		Первая дата:
 		<input type="date" name="dateFrom" id="dateFrom">
@@ -20,7 +25,22 @@
 	</label>
 	<button type="submit">Рассчитать промежуток</button>
 </form>
-<p id="output">
-</p>
+<p id="output"></p>
+
+<button class="btn"
+		onclick="document.getElementById('timerBox').classList.toggle('hidden')">
+	Таймер
+</button>
+<div id='timerBox' class="hidden" style="display: flex; gap: 10px">
+	<form id="timer">
+		<label for="time">
+			Время в минутах
+			<input type="number" name="time" id="time">
+		</label>
+		<button type="submit">Старт</button>
+	</form>
+	<button id="stop">Стоп</button>
+</div>
+<p id="outputTimer"></p>
 </body>
 </html>
