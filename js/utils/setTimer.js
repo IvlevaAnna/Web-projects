@@ -1,4 +1,5 @@
 import {printTimer} from "./print.js";
+import { Howl } from "howler"
 
 export function setTimer (time) {
      window.timerID = setInterval(() => {
