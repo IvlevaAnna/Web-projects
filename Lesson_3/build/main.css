@@ -1,0 +1,22 @@
+/*!*********************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./style.scss ***!
+  \*********************************************************************************************************/
+.titleColor {
+  color: cornflowerblue;
+}
+
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  width: 400px;
+}
