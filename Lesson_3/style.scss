@@ -1,0 +1,23 @@
+.titleColor {
+  color: cornflowerblue;
+}
+
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  width: 400px;
+}
+
+audio {
+  width: 400px;
+}
